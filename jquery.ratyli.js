@@ -18,27 +18,36 @@
           
             // event listeners for rating signs
             base.$el.on("click","> *",function(e){
-              if(base.options.interactive){
-                base.options.onSignClick.call(base,e);
-                var val=$(e.target).prevAll().length+1;
+              if(!base.options.disable){
+                var target= e.target;
+                if(target.tagName!="SPAN") target=target.parentNode;
+                
+                base.options.onSignClick.call(base,target);
+                var val=$(target).prevAll().length+1;
                 base.set(val);
               }
             });
           
             base.$el.on("mouseenter","> *",function(e){
-                if(base.options.interactive){
-                  $(e.target).addClass("rate-active");
-                  $(e.target).prevAll().addClass("rate-active");
+                var target= e.target;
+                if(target.tagName!="SPAN") target=target.parentNode;
+              
+                if(!base.options.disable){
+                  $(target).addClass("rate-active");
+                  $(target).prevAll().addClass("rate-active");
                 }
-                base.options.onSignEnter.call(base,e);
+                base.options.onSignEnter.call(base,target);
             });
 
             base.$el.on("mouseleave","> *",function(e){
-                if(base.options.interactive){
-                  $(e.target).removeClass("rate-active");
-                  $(e.target).prevAll().removeClass("rate-active");
+                var target= e.target;
+                if(target.tagName!="SPAN") target=target.parentNode;
+              
+                if(!base.options.disable){
+                  $(target).removeClass("rate-active");
+                  $(target).prevAll().removeClass("rate-active");
                 }
-                base.options.onSignLeave.call(base,e);
+                base.options.onSignLeave.call(base,target);
             });
 
         };
@@ -65,7 +74,7 @@
             } 
             
             // set rated
-            if(!init && base.options.interactive) base.$el.addClass("ratyli-rated");
+            if(!init && !base.options.disable) base.$el.addClass("ratyli-rated");
             
             //rated callack
             base.options.onRated.call(base,val,init);
@@ -83,7 +92,7 @@
     };
     
     $.ratyli.defaultOptions = {
-        interactive:true,
+        disable:false,
         full: "★",
         empty: "☆",
         cursor:"default",
