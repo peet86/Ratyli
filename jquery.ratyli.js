@@ -1,3 +1,7 @@
+// Ratyli: jquery rating plugin
+// version 0.2.1
+// (c) 2015 Peter Varga [info@vargapeter.com]
+// released under the Apache 2.0 license
 (function($){
     $.ratyli = function(el, options){
         var base = this;
