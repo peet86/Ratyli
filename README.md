@@ -64,5 +64,5 @@ You can use the amazing Font Awesome icons as rating signs easily:
 * The name inspired by the famous hungarian food: Ratyli. ;)
 
 ## License
-This plugin is available under [the MIT license](http://mths.be/mit).
+This plugin is available under Apache 2.0 license.
 
