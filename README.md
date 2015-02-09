@@ -1,5 +1,8 @@
 # Ratyli: Simple jQuery Rating Plugin
 
+### Output: 
+★★★☆☆
+
 ### HTML
 ```html
 <span class="ratyli" data-rate="3"></span>
@@ -11,10 +14,6 @@ $(function() {
     $('.ratyli').ratyli();
 });
 ```
-
-### Output: 
-★★★☆☆
-
 
 ### Demo & Examples
 
@@ -36,7 +35,6 @@ No CSS required, but you can pimp your ratings with these CSS selectors:
 .ratyli .rate-active{} /* sign hover style */
 .ratyli .rate-full{} /* full sign style */
 .ratyli .rate-empty{} /* empty sign style */
-.ratyli-rated .rate-full{} /* full sign style after rating*/
 /*etc..*/
 ```
 Check the demo and play with the examples: 
@@ -63,7 +61,7 @@ You can use the amazing Font Awesome icons as rating signs easily:
 ## Notes
 * Requires jQuery 1.7+.
 * Works in all A-grade browsers and IE9+.
-* The plugin's name inspired by the famous hungarian food: Ratyli. ;)
+* The name inspired by the famous hungarian food: Ratyli. ;)
 
 ## License
 This plugin is available under [the MIT license](http://mths.be/mit).
