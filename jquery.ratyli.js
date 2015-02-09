@@ -74,7 +74,7 @@
             } 
             
             // set rated
-            if(!init && !base.options.disable) base.$el.addClass("ratyli-rated");
+            if(!init && !base.options.disable) base.$el.addClass("rated");
             
             //rated callack
             base.options.onRated.call(base,val,init);
