@@ -15,6 +15,7 @@ $(function() {
 ### Output: 
 ★★★☆☆
 
+
 ### Demo & Examples
 
 http://codepen.io/peet86/pen/LEzrYy (CodePen)
@@ -30,7 +31,7 @@ Incude the latest jQuery library and the jquery.ratyli.min.js script in to your 
 No CSS required, but you can pimp your ratings with these CSS selectors:
 ```css
 .ratyli{} /* container style*/
-.ratyli-rated{} /* container style after rating*/
+.ratyli.rated{} /* container style after rating*/
 .ratyli .rate{} /* sign style*/
 .ratyli .rate-active{} /* sign hover style */
 .ratyli .rate-full{} /* full sign style */
@@ -51,6 +52,9 @@ You can use the amazing Font Awesome icons as rating signs easily:
 ```
 
 ### Updates
+
+#### v0.2.1 (09.02.2015)
+- rated CSS selector fix
 
 #### v0.2 (09.02.2015)
 - Font Awesome fix
