@@ -51,6 +51,11 @@ You can use the amazing Font Awesome icons as rating signs easily:
 
 ### Updates
 
+#### v0.3 (24.11.2015)
+- unrateable attribute
+- html5 data-rate and data-ratemax attributes
+- other small fixes
+
 #### v0.2.1 (09.02.2015)
 - rated CSS selector fix
 

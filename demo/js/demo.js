@@ -30,17 +30,17 @@ $(function() {
 
 	// Sign Callbacks:
 	$("#demo7 .ratyli").ratyli({
-		onSignClick:function(target){
+		onSignClick:function(value,target){
 			// sign click event callback
 			alert("clicked: "+target);
 		},
-		onSignEnter:function(target){
+		onSignEnter:function(value,target){
 			// sign mouseenter event callback
-			console.log("enter");
+			console.log("enter : "+value);
 		},
-		onSignLeave:function(target){
+		onSignLeave:function(value,target){
 			// sign mouseleave event callback
-			console.log("leave");
+			console.log("leave : "+target);
 		},
 	});
 
